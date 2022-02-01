@@ -50,8 +50,8 @@ int main(){
     b2.inc(); 
     b3.inc();
     cout<< "i1=" << i1 << " " << "i2=" << i2 << endl;
-    /*
-    b2 = b3; b3.inc();
+
+    b2 = b3; 
+    b3.inc();
     cout<< "i1=" << i1 << " " << "i2=" << i2 << endl;
-    */
 }

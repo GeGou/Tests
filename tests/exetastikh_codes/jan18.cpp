@@ -1,7 +1,8 @@
 #include<iostream>
 using namespace std;
 
-class A{ int data;
+class A{ 
+    int data;
 public:
     A(int i=10):data(i) {
         cout << "An A just created" << endl;}
@@ -26,7 +27,8 @@ public:
     };
 
 class A2{
-    A data1; A* data2;
+    A data1; 
+    A* data2;
 public:
     A2(const A& a):data1(a) {
         data2 = new A(a); 
@@ -42,7 +44,8 @@ public:
     };
 
 class B{
-    A1& data1; A2 data2;
+    A1& data1; 
+    A2 data2;
 public:
     B(A1& a1, A2& a2): data1(a1),data2(a2) {
         cout << "A B just created" << endl;}
